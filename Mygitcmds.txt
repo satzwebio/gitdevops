@@ -1,0 +1,58 @@
+
+Create a Directory
+Mkdir abcd
+
+Create two files
+echo "This is File1" > File1.txt
+echo "This is File12" > File2.txt
+
+To see the content in the file
+more File1.txt
+
+Initialize Git
+git init
+
+Git configuration(only needed for first time)
+git config --list
+git config --global user.name "Satheesh_Asokan"
+git config --global user.email "satzwebio@outlook.com"
+
+To track changes on all files- to add files into a staging area
+git add .
+
+To ignore the changes on the file
+git restore File.txt
+
+To check the status of the files
+git status
+
+To commit the changes
+git commit -m "my first commit"
+
+To see the log
+git log
+
+To see the difference in the filr
+git diff
+
+To go back to previous version
+git checkout fd79538a18c58b82f0d31bdaa5a6979dc90eccf2
+
+To add new remote repo:
+git remote add origin https://github.com/satzwebio/gitdevops.git
+
+To push the changes to the master
+git push -u origin master
+
+If you want to delete your changes associated with the detached HEAD
+You only need to checkout the branch you were on, e.g.
+git checkout master
+
+If you want to keep your changes associated with the detached HEAD
+Run git branch tmp - this will save your changes in a new branch called tmp.
+Run git checkout master
+If you would like to incorporate the changes you made into master, run git merge tmp from the master branch. You should be on the master branch after running git checkout master.
+
+To create a branch on local
+git branch -m master main
+
